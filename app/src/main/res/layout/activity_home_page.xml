@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.HomePageActivity"
+    android:background="@color/gray">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_BTN_acc"
+        android:text="Acclerometer"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/purple_700"
+        app:cornerRadius="50dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_light"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Light"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/purple_700" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_recordTable"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Record table"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/purple_700" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/main_LBL_playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter player name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
