@@ -1,12 +1,8 @@
 package Models;
 
-import android.content.Context;
-import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 import com.example.hw1.R;
 import com.google.android.material.textview.MaterialTextView;
@@ -45,8 +41,9 @@ public class ListRecordAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecordViewHolder recordViewHolder = (RecordViewHolder) holder;
         Record record = getItem(position);
 
+        recordViewHolder.record_LBL_player.setText(record.getPlayerName());
         recordViewHolder.record_LBL_score.setText("" +record.getScore());
-        recordViewHolder.record_LBL_player.setText(record.getName());
+
 
     }
 
@@ -79,7 +76,6 @@ public class ListRecordAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                     recordItemClickedListener.RecordItemClicked(getItem(getAdapterPosition()) , getAdapterPosition());
                 }
             });
-
         }
     }
 }

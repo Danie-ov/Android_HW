@@ -12,8 +12,9 @@
         android:layout_weight="1"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="textview1"
-        android:textSize="28dp"/>
+        android:text="player"
+        android:textSize="28dp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/score_TBL_records"
@@ -22,7 +23,8 @@
         android:layout_weight="1"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="textview2"
-        android:textSize="28dp"/>
+        android:text="score"
+        android:textSize="28dp"
+        android:textColor="@color/black"/>
 
 </LinearLayout>

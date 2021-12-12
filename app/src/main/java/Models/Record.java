@@ -9,7 +9,7 @@ public class Record {
 
     public Record() { }
 
-    public Record(long date, int score) {
+    public Record(String playerName, int score) {
         this.playerName = playerName;
         this.score = score;
     }
@@ -23,11 +23,11 @@ public class Record {
         return this;
     }
 
-    public String getName() {
+    public String getPlayerName() {
         return playerName;
     }
 
-    public Record setName(String name) {
+    public Record setPlayerName(String name) {
         this.playerName = playerName;
         return this;
     }

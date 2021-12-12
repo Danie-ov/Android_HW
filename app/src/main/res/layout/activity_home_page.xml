@@ -8,15 +8,15 @@
     android:background="@color/gray">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_acc"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/main_BTN_acc"
-        android:text="Acclerometer"
-        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        app:strokeColor="@color/purple_700"
-        app:cornerRadius="50dp"/>
+        android:layout_marginTop="100dp"
+        android:text="Acclerometer"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/purple_700" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_BTN_light"

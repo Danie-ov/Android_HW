@@ -42,7 +42,10 @@ public class ListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_list , container , false);
 
         String fromSP = SharedPrefs.getInstance(activity).getStrSP("MY_DB", "");
-        topRecords = new Gson().fromJson(fromSP, TopRecords.class);
+        if(fromSP.isEmpty()){
+            topRecords = new TopRecords();
+        }else
+            topRecords = new Gson().fromJson(fromSP, TopRecords.class);
 
         list_RV_records = view.findViewById(R.id.list_RV_records);
         ListRecordAdapter recordAdapter = new ListRecordAdapter(this, topRecords.getRecords());

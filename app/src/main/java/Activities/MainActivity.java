@@ -456,10 +456,13 @@ public class MainActivity extends AppCompatActivity implements Constants {
     private void saveRecordToSP() {
 
         String fromSP = SharedPrefs.getInstance(this).getStrSP("MY_DB", "");
-        topRecords = new Gson().fromJson(fromSP, TopRecords.class);
+        if(fromSP.isEmpty()){
+            topRecords = new TopRecords();
+        }else
+            topRecords = new Gson().fromJson(fromSP, TopRecords.class);
 
         topRecords.addRecord(new Record()
-                .setName(playerName)
+                .setPlayerName(playerName)
                 .setScore(score)
                 .setLat(lat)
                 .setLon(lon));

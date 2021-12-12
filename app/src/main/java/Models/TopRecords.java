@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TopRecords {
 
-    public final static int MAX_REC_IN_LIST = 10;
+    public final static int MAX_REC_IN_LIST = 5;
     private ArrayList<Record> records = new ArrayList<>();
 
     public TopRecords() { }
